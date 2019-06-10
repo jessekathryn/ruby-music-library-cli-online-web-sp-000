@@ -85,7 +85,7 @@ class MusicLibraryController
     user_input = gets.chomp.to_i
     song_number = user_input
       if song_number 
-        list_songs.find.each_with_index do |n, index|
+        list_songs.match do |n|
         puts "Playing #{n.name} by #{n.artist.name}"
     end
   end
