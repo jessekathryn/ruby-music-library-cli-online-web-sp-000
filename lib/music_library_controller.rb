@@ -85,7 +85,7 @@ class MusicLibraryController
     user_input = gets.chomp.to_i
     song_number = user_input
       if song_number 
-        song_number.find do |n|
+        song_number.find {|n|}
         puts "Playing #{n.name} by #{n.artist.name}"
     end
   end
