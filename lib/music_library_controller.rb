@@ -88,5 +88,5 @@ class MusicLibraryController
         puts "Playing #{n.name} by #{n.artist.name}"
       end
     end
-  end
+ 
 end
