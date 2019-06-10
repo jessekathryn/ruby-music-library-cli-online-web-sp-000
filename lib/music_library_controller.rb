@@ -90,4 +90,6 @@ class MusicLibraryController
   
   def list_artist
     list_songs_by_artist
+  end
+  
 end
