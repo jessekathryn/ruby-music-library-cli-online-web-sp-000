@@ -84,8 +84,8 @@ class MusicLibraryController
     list_songs
     user_input = gets.chomp.to_i
     #song_number = user_input
-      if user_input 
-        user_input.match do |n|
+    song = Song.all.sort {|a,b| a.name<=>b.name} []song user_input 
+        song.match do |n|
         puts "Playing #{n.name} by #{n.artist.name}"
       end
     end
