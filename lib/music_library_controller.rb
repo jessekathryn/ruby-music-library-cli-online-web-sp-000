@@ -83,10 +83,10 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     list_songs
     user_input = gets.chomp.to_i
-    song_number = user_input + 1
+    song_number = user_input - 1
       if song_number 
-        song_number.detect(user_input[index + 1]) { |n|}
-        puts "Playing #{s.name} by #{s.artist.name}"
+        song_number.detect(song_number) {|n|}
+        puts "Playing #{n.name} by #{n.artist.name}"
     end
   end
 end
