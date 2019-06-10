@@ -32,6 +32,8 @@ class MusicLibraryController
           list_songs_by_genre
         when "play song"
           play_song
+        when "list_artist"
+          list_songs_by_artist
         end
       end
     end
@@ -87,9 +89,4 @@ class MusicLibraryController
         puts "Playing #{song.name} by #{song.artist.name}"
     end
   end
-  
-  def list_artist
-    list_songs_by_artist
-  end
-  
 end
